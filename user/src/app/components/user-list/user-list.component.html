@@ -23,7 +23,7 @@
           <td>{{user.password}}</td>
           <td>{{user.date}}</td>
           <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button></td>
-          <td><button class="btn btn-danger" [routerLink]="['/details', user]"> Details User</button></td>
+          <td><button class="btn btn-danger" [routerLink]="['/details', user.id]"> Details User</button></td>
         </tr>
       </tbody>
     </table>
